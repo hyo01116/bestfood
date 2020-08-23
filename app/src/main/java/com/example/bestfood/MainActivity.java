@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        memberInfoItem = ((MyAPP)getApplication()).getMemberInfoItem();
+        memberInfoItem = ((MyAPP)getApplication()).getMemberInfoItem();    //myapp의 사용자 정보를 얻어옴 
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
