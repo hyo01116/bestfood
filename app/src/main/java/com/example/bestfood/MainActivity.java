@@ -65,6 +65,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         headerLayout = navigationView.getHeaderView(0);
         GoLib.getInstance().goFragment(getSupportFragmentManager(), R.id.content_main, BestFoodListFragment.newInstance());
+
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         /*mAppBarConfiguration = new AppBarConfiguration.Builder(
