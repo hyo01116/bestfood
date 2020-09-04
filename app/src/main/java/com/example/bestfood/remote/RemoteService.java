@@ -53,7 +53,7 @@ public interface RemoteService {
     @POST("/food/info")
     Call<String> insertFoodInfo(@Body FoodInfoItem infoItem);
 
-    @Multipart
+    @Multipart     //파일 업로드
     @POST("/food/info/image")
     Call<ResponseBody> uploadFoodImage(@Part("info_seq") RequestBody infoSeq,
                                        @Part("image_memo") RequestBody imageMemo,

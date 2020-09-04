@@ -133,7 +133,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             GoLib.getInstance().goFragment(getSupportFragmentManager(), R.id.content_main, BestFoodKeepFragment.newInstance());
         }
         else if(id == R.id.nav_register){
-            GoLib.getInstance().goFragment(getSupportFragmentManager(), R.id.content_main, BestFoodRegisterActivity(this));
+            GoLib.getInstance().goBestFoodRegisterActivity(this);
         }
         drawer.closeDrawer(GravityCompat.START);
         return true;
